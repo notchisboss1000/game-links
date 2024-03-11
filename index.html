@@ -17,6 +17,13 @@
             padding: 20px;
         }
 
+        .header-image img {
+            height: 40px; /* Set the height of the header image */
+            width: auto; /* Ensure the width adjusts proportionally */
+            display: block; /* Remove any extra spacing */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
         main {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -45,9 +52,9 @@
 </head>
 <body>
     <header>
-            <div class="image-container">
-                <img src="header.png" alt="Header">
-            </div>
+        <div class="header-image">
+            <img src="header.png" alt="Header">
+        </div>
     </header>
 
     <main>
