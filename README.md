@@ -1,2 +1,2 @@
 This is a simple link and image system for my favorite games. <br>
-The current games on this page are PaperSnips Recolored, Luminosity, and The Pit
+The current games on this page are [PaperSnips Recolored](https://notchisboss1000.github.io/PaperSnips-Recolored/) ([Rep.](https://github.com/notchisboss1000/PaperSnips-Recolored)), [Luminosity](https://notchisboss1000.github.io/Luminosity/) ([Rep.](https://github.com/notchisboss1000/Luminosity)), and [The Pit](https://notchisboss1000.github.io/The-Pit/) ([Rep.](https://github.com/notchisboss1000/The-Pit)).
