@@ -72,7 +72,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Image 1 -->
         <a href="https://notchisboss1000.github.io/PaperSnips-Recolored/" class="image-link">
             <div class="image-container">
@@ -170,6 +170,14 @@
             const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
 
             return luminance > 0.5 ? '#000' : '#fff';
+        }
+    </script>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const dataParam = urlParams.get('data');
+        if (dataParam === 'secret') {
+            document.getElementById('main-content').innerHTML = '<h1 style="text-align: center; margin-top: 50px;">This is a secret message!</h1>';
         }
     </script>
 </body>
