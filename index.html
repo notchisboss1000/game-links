@@ -42,11 +42,26 @@
             width: 100%;
             height: 200px;
             display: block;
+            transition: filter 0.5s ease;
         }
 
-        .image-link {
-            text-decoration: none;
-            color: inherit;
+        .image-container:hover img {
+            filter: blur(5px);
+        }
+
+        .image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .image-container:hover .image-text {
+            opacity: 1;
         }
     </style>
     <title>Notchisboss1000</title>
@@ -63,6 +78,7 @@
         <a href="https://notchisboss1000.github.io/PaperSnips-Recolored/" class="image-link">
             <div class="image-container">
                 <img src="image/1.jpg" alt="Image 1">
+                <div class="image-text">Text Over Image 1</div>
             </div>
         </a>
 
@@ -70,58 +86,53 @@
         <a href="https://notchisboss1000.github.io/The-Pit" class="image-link">
             <div class="image-container">
                 <img src="image/2.jpg" alt="Image 2">
+                <div class="image-text">Text Over Image 2</div>
             </div>
         </a>
 
         <!-- Image 3 -->
         <a href="https://notchisboss1000.github.io/Luminosity/" class="image-link">
             <div class="image-container">
-                <img src="image/3.jpg" alt="noimage.jpg">
+                <img src="image/3.jpg" alt="Image 3">
+                <div class="image-text">Text Over Image 3</div>
             </div>
         </a>
 
-        <!-- Image 4 -->
-        <a href="#" class="image-link">
-            <div class="image-container">
-                <img src="image/no.jpg" alt="Image 4">
-            </div>
-        </a>
+        <!-- Placeholder Image 4 -->
+        <div class="image-container">
+            <img src="image/no.jpg" alt="Image 4">
+            <div class="image-text">Placeholder Text for Image 4</div>
+        </div>
 
-        <!-- Image 5 -->
-        <a href="#" class="image-link">
-            <div class="image-container">
-                <img src="image/no.jpg" alt="Image 5">
-            </div>
-        </a>
+        <!-- Placeholder Image 5 -->
+        <div class="image-container">
+            <img src="image/no.jpg" alt="Image 5">
+            <div class="image-text">Placeholder Text for Image 5</div>
+        </div>
 
-        <!-- Image 6 -->
-        <a href="#" class="image-link">
-            <div class="image-container">
-                <img src="image/no.jpg" alt="Image 6">
-            </div>
-        </a>
+        <!-- Placeholder Image 6 -->
+        <div class="image-container">
+            <img src="image/no.jpg" alt="Image 6">
+            <div class="image-text">Placeholder Text for Image 6</div>
+        </div>
 
-        <!-- Image 7 -->
-        <a href="#" class="image-link">
-            <div class="image-container">
-                <img src="image/no.jpg" alt="Image 7">
-            </div>
-        </a>
+        <!-- Placeholder Image 7 -->
+        <div class="image-container">
+            <img src="image/no.jpg" alt="Image 7">
+            <div class="image-text">Placeholder Text for Image 7</div>
+        </div>
 
-        <!-- Image 8 -->
-        <a href="#" class="image-link">
-            <div class="image-container">
-                <img src="image/no.jpg" alt="Image 8">
-            </div>
-        </a>
+        <!-- Placeholder Image 8 -->
+        <div class="image-container">
+            <img src="image/no.jpg" alt="Image 8">
+            <div class="image-text">Placeholder Text for Image 8</div>
+        </div>
 
-        <!-- Image 9 -->
-        <a href="#" class="image-link">
-            <div class="image-container">
-                <img src="image/no.jpg" alt="Image 9">
-            </div>
-        </a>
+        <!-- Placeholder Image 9 -->
+        <div class="image-container">
+            <img src="image/no.jpg" alt="Image 9">
+            <div class="image-text">Placeholder Text for Image 9</div>
+        </div>
     </main>
 </body>
 </html>
-
