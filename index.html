@@ -135,50 +135,6 @@
         </div>
         </a>
     </main>
-
-    <script>
-        const imageContainers = document.querySelectorAll('.image-container');
-        imageContainers.forEach(container => {
-            const image = container.querySelector('img');
-            const text = container.querySelector('.image-text');
-            const color = getContrastColor(image);
-
-            text.style.color = color;
-        });
-
-        function getContrastColor(image) {
-            const canvas = document.createElement('canvas');
-            const context = canvas.getContext('2d');
-            canvas.width = image.width;
-            canvas.height = image.height;
-            context.drawImage(image, 0, 0);
-
-            const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
-            const pixels = imageData.data;
-
-            let r = 0, g = 0, b = 0;
-            for (let i = 0; i < pixels.length; i += 4) {
-                r += pixels[i];
-                g += pixels[i + 1];
-                b += pixels[i + 2];
-            }
-
-            r = Math.round(r / (pixels.length / 4));
-            g = Math.round(g / (pixels.length / 4));
-            b = Math.round(b / (pixels.length / 4));
-
-            const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
-
-            return luminance > 0.5 ? '#000' : '#fff';
-        }
-    </script>
-
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const dataParam = urlParams.get('data');
-        if (dataParam === 'secret') {
-            document.getElementById('main-content').innerHTML = '<a style="text-align: center; margin-top: 50px;">Welcome to my secret site! </br> I may post some secrets here every once in a while</a>';
-        } 
-    </script>
+    
 </body>
 </html>
